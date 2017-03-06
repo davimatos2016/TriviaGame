@@ -1,0 +1,15 @@
+body {
+    text-align: center;
+    background-image: url("../images/background-images-5.jpg");
+    font-size: 20px;
+}
+button {
+    font-size: 20px;
+    padding: 5px;
+}
+button:hover {
+    font-weight: bold;
+}
+.hide {
+    display: none;
+}

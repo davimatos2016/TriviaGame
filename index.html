@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Trivia Game</title>
+      <!-- linking jquery to html -->
+      <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+      <!-- Linking to app.js -->
+      <script type="text/javascript" src="assets/javascript/app.js"></script>
+      <!-- Bootstrap CSS link -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+      <!-- Linking to CSS -->
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+      <!--So it can be neatly viewed on phones-->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+   </head>
+   <body>
+      <h1>80's Movie Trivia</h1>
+      <h2>Time Remaining: <span id="timer"></span> </h2>
+      <h2 id="timer"></h2>
+      <button id="start">Start Game!</button>
+      <br/>
+      <div class="questions hide">
+         <!--Question 1-->
+         <h3>1 - Who sings the main theme in Philadelphia?</h3>
+         <input type="radio" name="q1" value="a" data-incorrect='incorrect'>U2
+         <input type="radio" name="q1" value="b" data-incorrect='incorrect'>REM
+         <input type="radio" name="q1" value="c" data-incorrect='incorrect'>The presidents of the USA
+         <input type="radio" name="q1" value="d" data-correct='correct'>Bruce Springsteen
+         <br/>
+         <br/>
+         <!--Question 2-->
+         <h3>2 - Which actor plays the opposite to Brad Pitt in Kalifornia?</h3>
+         <input type='radio' name='q2' value='a' data-incorrect='incorrect'>Edward Norton
+         <input type='radio' name='q2' value='b' data-correct='correct'>David Duchovny
+         <input type='radio' name='q2' value='c' data-incorrect='incorrect'>David Schwimmer
+         <input type='radio' name='q2' value='d' data-incorrect='incorrect'>Harrison Ford
+         <br/>
+         <br/>
+         <!--Question 3-->
+         <h3>3 - How many Oscars did West Side Story win?</h3>
+         <input type='radio' name='q3' value='a' data-correct='correct'>10
+         <input type='radio' name='q3' value='b' data-incorrect='incorrect'>2
+         <input type='radio' name='q3' value='c' data-incorrect='incorrect'>8
+         <input type='radio' name='q3' value='d' data-incorrect='incorrect'>6
+         <br/>
+         <br/>
+         <!--Question 4-->
+         <h3>4 - Who played Sandy´s muscular boyfriend in Grease?</h3>
+         <input type='radio' name='q4' value='a' data-incorrect='incorrect'>John Travolta
+         <input type='radio' name='q4' value='b' data-correct='correct'> Lorenzo Lamas
+         <input type='radio' name='q4' value='c' data-incorrect='incorrect'>Jeff Conway
+         <input type='radio' name='q4' value='d' data-incorrect='incorrect'>Warren Beatty
+         <br/>
+         <br/>
+         <!--Question 5-->
+         <h3>5 - Who played the "unsinkable Molly" in the film titanic ?</h3>
+         <input type='radio' name='q5' value='a' data-incorrect='incorrect'>Kate Winslet
+         <input type='radio' name='q5' value='b' data-correct='correct'>Kathy Bates
+         <input type='radio' name='q5' value='c' data-incorrect='incorrect'>Jessica Lane
+         <input type='radio' name='q5' value='d' data-incorrect='incorrect'>Mary Stuart Masterson
+         <br/>
+         <br/>
+         <!--Question 6-->
+         <h3>6 - Who played the "unsinkable Molly" in the film titanic ?</h3>
+         <input type='radio' name='q6' value='a' data-incorrect='incorrect'>I´m not like them
+         <input type='radio' name='q6' value='b' data-correct='correct'>Fortunate Son
+         <input type='radio' name='q6' value='c' data-incorrect='incorrect'>While my Guitar gently weeps
+         <input type='radio' name='q6' value='d' data-incorrect='incorrect'>Everybody´s talking at me
+         <br/>
+         <br/>
+         <!--Question 7-->
+         <h3>7 - Who played the "unsinkable Molly" in the film titanic ?</h3>
+         <input type='radio' name='q7' value='a' data-incorrect='incorrect'>Rob Lowe
+         <input type='radio' name='q7' value='b' data-correct='correct'>Peter Gallagher
+         <input type='radio' name='q7' value='c' data-incorrect='incorrect'>Bill Pullman
+         <input type='radio' name='q7' value='d' data-incorrect='incorrect'>Geoffrey Rush
+         <br/>
+         <br/>
+         <!--Question 8-->
+         <h3>8 - What does Viola say after spending the night with Shakespeare for the first time in "Shakespeare in love?</h3>
+         <input type='radio' name='q8' value='a' data-incorrect='incorrect'>Wow, that was more than great Master Shakespeare!
+         <input type='radio' name='q8' value='b' data-correct='correct'>It´s a new world!
+         <input type='radio' name='q8' value='c' data-incorrect='incorrect'>Love, love, love. . . Such a great new day
+         <input type='radio' name='q8' value='d' data-incorrect='incorrect'>It´s a new world!
+         <br/>
+         <br/>
+         <!--Question 9-->
+         <h3>9 - What is the first thing that Lester Burnham says in the beginning of "American Beauty"?</h3>
+         <input type='radio' name='q9' value='a' data-incorrect='incorrect'>I´m going to tell my story
+         <input type='radio' name='q9' value='b' data-correct='correct'>Hi, my name is Lester Burnham
+         <input type='radio' name='q9' value='c' data-incorrect='incorrect'>There are different kinds of story's
+         <input type='radio' name='q9' value='d' data-incorrect='incorrect'>That´s how my life changed
+         <br/>
+         <br/>
+         <!--Question 10-->
+         <h3>10 - In "Legends of the Fall" which actor plays the elder brother?</h3>
+         <input type='radio' name='q10' value='a' data-incorrect='incorrect'>Brad Pitt
+         <input type='radio' name='q10' value='b' data-correct='correct'>Aidan Quinn
+         <input type='radio' name='q10' value='c' data-incorrect='incorrect'>Henry Thomas
+         <input type='radio' name='q10' value='d' data-incorrect='incorrect'>English
+         <br/>
+         <br/>
+         <br/>
+         <br>
+         <button id="submit">Submit</button>
+      </div>
+      <div id="results" class="hide">
+         <h1>All Done!</h1>
+         <br/><span id="wins"></span>
+         <h3>Correct Answers: <span id="correct"></span></h3>
+         <h3>Incorrect Answers: <span id="incorrect"></span></h3>
+         <h3>Unanswered: <span id="unanswered"></span></h3>
+      </div>
+   </body>
+</html>
